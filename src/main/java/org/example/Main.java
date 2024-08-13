@@ -25,8 +25,8 @@ public class Main {
     finalOrbit.setOrbitBody(earth);
 
     // Set the Ellipticals for Each, remember that isFromSeaLevel is true for the altitudes
-    initialOrbit.generateEllipticalsFromApses(initialAltitudes[0], initialAltitudes[1], true);
-    finalOrbit.generateEllipticalsFromApses(finalAltitudes[0], finalAltitudes[1], true);
+    initialOrbit.genEllipticalsFromApses(initialAltitudes[0], initialAltitudes[1], true);
+    finalOrbit.genEllipticalsFromApses(finalAltitudes[0], finalAltitudes[1], true);
 
     // Get the Transfer Orbit
     Keplerian transferOrbit = VisViva.findTransferOrbit(initialOrbit, finalOrbit);
