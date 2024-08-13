@@ -4,8 +4,6 @@ import org.example.application.VisViva;
 import org.example.model.Keplerian;
 import org.example.model.OrbitBody;
 
-//I am adding a comment here to test git stuff
-
 public class Main {
   public static void main(String[] args) {
 
