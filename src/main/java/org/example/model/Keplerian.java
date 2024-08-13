@@ -118,8 +118,7 @@ public class Keplerian {
 
   // Setter for the ELLIPTICAL and APSES from given apses altitudes, taking into account whether
   // given apses are from sea level or not
-  public void generateEllipticalsFromApses(
-      double altitude1, double altitude2, boolean isFromSeaLevel) {
+  public void genEllipticalsFromApses(double altitude1, double altitude2, boolean isFromSeaLevel) {
     double radius1;
     double radius2;
 

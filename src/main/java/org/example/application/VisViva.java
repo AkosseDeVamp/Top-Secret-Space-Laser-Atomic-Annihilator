@@ -48,7 +48,7 @@ public class VisViva {
     if (initialOrbit.getPeriapsis() > finalOrbit.getPeriapsis()) {
       double transferApoapsis = initialOrbit.getApoapsis();
       double transferPeriapsis = finalOrbit.getPeriapsis();
-      transferOrbit.generateEllipticalsFromApses(transferPeriapsis, transferApoapsis, false);
+      transferOrbit.genEllipticalsFromApses(transferPeriapsis, transferApoapsis, false);
       return transferOrbit;
     }
 
@@ -56,7 +56,7 @@ public class VisViva {
     else {
       double transferApoapsis = finalOrbit.getApoapsis();
       double transferPeriapsis = initialOrbit.getPeriapsis();
-      transferOrbit.generateEllipticalsFromApses(transferPeriapsis, transferApoapsis, false);
+      transferOrbit.genEllipticalsFromApses(transferPeriapsis, transferApoapsis, false);
       return transferOrbit;
     }
   }
